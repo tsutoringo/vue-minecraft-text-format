@@ -49,92 +49,71 @@ export default {
     }
 }
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .minecraft-text-format {
     color: #fff;
-
-    .c-0 {
-        color: #000;
-    }
-
-    .c-1 {
-        color: #0000AA;
-    }
-
-    .c-2 {
-        color: #00AA00;
-    }
-
-    .c-3 {
-        color: #00AAAA;
-    }
-
-    .c-4 {
-        color: #AA0000;
-    }
-
-    .c-5 {
-        color: #AA00AA;
-    }
-
-    .c-6 {
-        color: #FFAA00;
-    }
-
-    .c-7 {
-        color: #AAAAAA;
-    }
-
-    .c-8 {
-        color: #555555;
-    }
-
-    .c-9 {
-        color: #5555FF;
-    }
-
-    .c-a {
-        color: #55FF55;
-    }
-
-    .c-b {
-        color: #55FFFF;
-    }
-
-    .c-c {
-        color: #FF5555;
-    }
-
-    .c-d {
-        color: #FF55FF;
-    }
-
-    .c-e {
-        color: #FFFF55;
-    }
-
-    .c-f {
-        color: #FFFFFF;
-    }
-
-    .c-g {
-        color: #DDD605;
-    }
-
-    .c-l {
-        font-weight: bold;
-    }
-
-    .c-m {
-        text-decoration: line-through;
-    }
-
-    .c-n {
-        text-decoration: underline;
-    }
-
-    .c-o {
-        font-style: italic;
-    }
+}
+.minecraft-text-format .c-0 {
+    color: #000;
+}
+.minecraft-text-format .c-1 {
+    color: #0000AA;
+}
+.minecraft-text-format .c-2 {
+    color: #00AA00;
+}
+.minecraft-text-format .c-3 {
+    color: #00AAAA;
+}
+.minecraft-text-format .c-4 {
+    color: #AA0000;
+}
+.minecraft-text-format .c-5 {
+    color: #AA00AA;
+}
+.minecraft-text-format .c-6 {
+    color: #FFAA00;
+}
+.minecraft-text-format .c-7 {
+    color: #AAAAAA;
+}
+.minecraft-text-format .c-8 {
+    color: #555555;
+}
+.minecraft-text-format .c-9 {
+    color: #5555FF;
+}
+.minecraft-text-format .c-a {
+    color: #55FF55;
+}
+.minecraft-text-format .c-b {
+    color: #55FFFF;
+}
+.minecraft-text-format .c-c {
+    color: #FF5555;
+}
+.minecraft-text-format .c-d {
+    color: #FF55FF;
+}
+.minecraft-text-format .c-e {
+    color: #FFFF55;
+}
+.minecraft-text-format .c-f {
+    color: #FFFFFF;
+}
+.minecraft-text-format .c-g {
+    color: #DDD605;
+}
+.minecraft-text-format .c-l {
+    font-weight: bold;
+}
+.minecraft-text-format .c-m {
+    text-decoration: line-through;
+}
+.minecraft-text-format .c-n {
+    text-decoration: underline;
+}
+.minecraft-text-format .c-o {
+    font-style: italic;
 }
 </style>
