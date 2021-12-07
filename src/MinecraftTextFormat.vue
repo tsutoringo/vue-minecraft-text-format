@@ -37,14 +37,14 @@ export default {
       } else {
         return text;
       }
-    }
+    };
 
     for (let i = 0; i < splited.length; i++) {
       childs.push(h('span', {}, child(splited[i])));
     }
 
     return h('span', {
-      class: [ 'minecraft-text-format' ]
+      class: ['minecraft-text-format']
     }, childs);
   }
 };
