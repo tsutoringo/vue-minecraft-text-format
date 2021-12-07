@@ -6,29 +6,31 @@ export default {
     text: {
       type: String,
       required: true
+    },
+    prefix: {
+      type: String,
+      default: '§'
     }
   },
   render () {
-    const splited = this.text.split('§r');
+    const splited = this.text.split(`${this.prefix}r`);
     const childs = [];
 
-    function child (text) {
+    const child = text => {
       const color = text.match(/§[0-9a-fk-or]/g);
 
       if (color) {
-        const colorCode = color[0].replace('§', '');
+        const colorCode = color[0].replace(this.prefix, '');
         const index = text.indexOf(color[0]);
 
         const before = text.substring(0, index);
         const after = text.substring(index + color[0].length);
 
-        console.log(`before:${before} code:${colorCode} after:${after}`);
-
         return [
           before,
           h('span', {
             class: [
-                            `c-${colorCode}`
+              `c-${colorCode}`
             ]
           }, child(after))
         ];
@@ -42,9 +44,7 @@ export default {
     }
 
     return h('span', {
-      class: [
-        'minecraft-text-format'
-      ]
+      class: [ 'minecraft-text-format' ]
     }, childs);
   }
 };
