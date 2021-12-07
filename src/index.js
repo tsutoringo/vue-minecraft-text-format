@@ -7,3 +7,4 @@ const VueMinecraftTextFormat = {
 };
 
 export default VueMinecraftTextFormat;
+export { MinecraftTextFormat };
