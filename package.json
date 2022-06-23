@@ -1,44 +1,19 @@
 {
-  "name": "vue-minecraft-text-format",
-  "description": "Minecraft text formatting code in Vue",
-  "version": "1.0.3",
-  "private": false,
-  "author": {
-    "name": "tsutoringo"
-  },
-  "files": [ "dist" ],
-  "main": "dist/vue-minecraft-text-format.common.js",
-  "unpkg": "./dist/vue-minecraft-text-format.umd.js",
-  "jsdelivr": "./dist/vue-minecraft-text-format.umd.min.js",
+  "name": "minecraft-text-format",
+  "private": true,
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib ./src/index.js"
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
-    "vue": "^3.0.0"
+    "vue": "^3.2.25"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
-    "@vue/cli-service": "~4.5.0",
-    "@vue/compiler-sfc": "^3.0.0",
-    "@vue/eslint-config-standard": "^5.1.2",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.7.2",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0",
-    "eslint-plugin-vue": "^7.0.0"
-  },
-  "_id": "vue-minecraft-text-format@1.0.0",
-  "keywords": [
-    "Vue",
-    "Minecraft"
-  ],
-  "license": "ISC",
-  "readme": "ERROR: No README data found!"
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
 }
